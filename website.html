@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<!--HEADER SECTION-->
+	<head>
+		<title>Kristine's Website</title>
+		<meta charset="UTF-8"/>
+		<meta name="author" content="Kristine Tomlinson"/>
+		<meta name="description" content="My online resume"/>
+		<link rel="icon" type="image/x-icon" href="./website_icon.png"/>
+		<link rel="stylesheet" type="text/css" href="./website.css"/>
+		<link rel="stylesheet" type="text/css" href="./styles.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'/>
+		<!--script src="./website3.js"></script-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script>		
+			//Declare window height and width variables		
+			var windowHeight = $(window).height();
+			var windowWidth = $(window).width();
+
+			var rowCenter = Math.floor(windowHeight/8);
+
+		
+			//Update window height and width variables when window changes sizes
+			$(window).resize(function(){
+				windowHeight = $(window).height();
+				windowWidth = $(window).width();
+
+				rowCenter = Math.floor(windowHeight/8);
+
+				$("#education").css("padding-top", rowCenter);
+				$("#about").css("padding-top", rowCenter);
+				$("#work").css("padding-top", rowCenter);
+				$("#quals").css("padding-top", rowCenter);
+				$("#awards").css("padding-top", rowCenter);
+				$("#contact").css("padding-top", rowCenter);
+			});
+
+
+			$(document).ready(function() {
+
+				$("#education").css("padding-top", rowCenter);
+				$("#about").css("padding-top", rowCenter);
+				$("#work").css("padding-top", rowCenter);
+				$("#quals").css("padding-top", rowCenter);
+				$("#awards").css("padding-top", rowCenter);
+				$("#contact").css("padding-top", rowCenter);
+
+				$("#education").mouseenter(function(){
+					$("#education").css("width", "40%");
+					$("#learn").css("width", "0%");
+					$("#educationIcon").append(windowHeight);
+				});
+				$("#education").mouseleave(function(){
+					$("#education").css("width", "20%");
+					$("#learn").css("width", "20%");
+					$("#educationIcon").empty("Education");
+				});
+
+				$("#about").mouseenter(function(){
+					$("#about").css("width", "40%");
+					$("#palmtree").css("width", "0%");
+					$("#aboutIcon").append(windowWidth);
+				});
+				$("#about").mouseleave(function(){
+					$("#about").css("width", "20%");
+					$("#palmtree").css("width", "20%");
+					$("#aboutIcon").empty("About");
+				});
+
+				$("#work").mouseenter(function(){
+					$("#work").css("width", "40%");
+					$("#palmtree").css("width", "0%");
+					$("#workIcon").append("Work");
+				});
+				$("#work").mouseleave(function(){
+					$("#work").css("width", "20%");
+					$("#palmtree").css("width", "20%");
+					$("#workIcon").empty("Work");
+				});
+
+				$("#quals").mouseenter(function(){
+					$("#quals").css("width", "40%");
+					$("#board").css("width", "0%");
+					$("#qualsIcon").append("Qualifications");
+				});
+				$("#quals").mouseleave(function(){
+					$("#quals").css("width", "20%");
+					$("#board").css("width", "20%");
+					$("#qualsIcon").empty("Qualifications");
+				});
+
+				$("#awards").mouseenter(function(){
+					$("#awards").css("width", "40%");
+					$("#board").css("width", "0%");
+					$("#awardsIcon").append("Awards");
+				});
+				$("#awards").mouseleave(function(){
+					$("#awards").css("width", "20%");
+					$("#board").css("width", "20%");
+					$("#awardsIcon").empty("Awards");
+				});
+
+				$("#contact").mouseenter(function(){
+					$("#contact").css("width", "40%");
+					$("#explore").css("width", "0%");
+					$("#contactIcon").append("Contact");
+				});
+				$("#contact").mouseleave(function(){
+					$("#contact").css("width", "20%");
+					$("#explore").css("width", "20%");
+					$("#contactIcon").empty("Contact");
+				});
+
+			});
+		</script>
+
+	</head>
+	
+	<!--BODY SECTION-->
+	<body>
+
+		<div id="tileMenuTop">
+				<div id="learn" class="block"></div>
+				<div id="education" class="block"><div id="educationIcon" data-icon="l"></div></div>
+				<div id="about" class="block"><div id="aboutIcon" class="centerIconHeight" data-icon="?"></div></div>
+				<div id="palmtree" class="block"></div>
+				<div id="work" class="block"><div id="workIcon" class="centerIconHeight" data-icon="w"></div></div>
+		</div>
+	
+		<div id="tileMenuMiddle">
+				<div id="bear" class="block"></div>
+				<div id="nameFirst" class="block"><div class="centerTextHeight">Kristine</div></div>
+				<div id="me" class="block"></div>
+				<div id="nameLast" class="block"><div class="centerTextHeight">Tomlinson</div></div>
+				<div id="life" class="block"></div>
+		</div>
+
+		<div id="tileMenuBottom">
+				<div id="quals" class="block"><div id="qualsIcon" class="centerIconHeight" data-icon="g"></div></div>
+				<div id="board" class="block"></div>
+				<div id="awards" class="block"><div id="awardsIcon" class="centerIconHeight" data-icon="a"></div></div>
+				<div id="contact" class="block"><div id="contactIcon" class="centerIconHeight" data-icon="e"></div></div>
+				<div id="explore" class="block"></div>
+		</div>	
+
+	</body>
+</html>

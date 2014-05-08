@@ -1,0 +1,159 @@
+body, html{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+}
+
+body div{
+	transition: height 1s;
+}
+
+body div div{
+	transition: width 1s;
+}
+
+.centerIconHeight{
+	margin-top: 20%;
+}
+
+.centerTextHeight{
+	margin-top: 15%;
+}
+
+#tileMenuTop{
+	height: 33%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	overflow: hidden;
+	float: left;
+}
+
+#tileMenuMiddle{
+	height: 34%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	overflow: hidden;
+	float: left;
+}
+
+#tileMenuBottom{
+	height: 33%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	overflow: hidden;
+	float: left;
+}
+
+#education{
+	height: 100%;
+	width: 33%;
+	font-size: 200%;
+	font-weight: bold;
+	float: left;
+	margin: 0px;
+	padding-top: 0px;
+	text-align: center;
+	background-color: #946ce6;
+}
+
+#work{
+	height: 100%;
+	width: 33%;
+	font-size: 200%;
+	font-weight: bold;
+	float: left;
+	margin: 0px;
+	text-align: center;
+	background-color: #777;
+}
+
+#about{
+	height: 100%;
+	width: 20%;
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	margin: 0px;
+	/*background-color: #f5f1c1;*/
+	background-color:  #fffbcc;
+	background-image: url('./contact.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#quals{
+	height: 100%;
+	width: 33%;
+	font-size: 200%;
+	font-weight: bold;
+	float: left;
+	margin: 0px;
+	text-align: center;
+	background-color: #999;
+}
+
+#awards{
+	height: 100%;
+	width: 33%;
+	font-size: 200%;
+	font-weight: bold;
+	float: left;
+	margin: 0px;
+	text-align: center;
+	background-color: #04bd95;
+}
+
+
+
+#blank1{
+	background-color: #6ee6cc;
+}
+
+#blank2{
+	background-color: #29d6b1;
+}
+
+#blank3{
+	background-color: #aa8ce6;
+}
+
+#blank4{
+	background-color: #c2b1e6;
+}
+
+.blankMiddle{
+	height: 100%;
+	width: 34%;
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	margin: 0px;
+	padding-top: 1.5%;
+}
+
+.blankSide{
+	height: 100%;
+	width: 40%;
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	margin: 0px;
+	padding-top: 1.5%;
+}
+
+
+
